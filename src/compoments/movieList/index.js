@@ -4,7 +4,7 @@ import { Row, Col } from "antd";
 import 'antd/dist/reset.css';
 import MovieCard from '../movieCard'
 
-const Block = ({ movies }) => {
+const MovieList = ({ movies }) => {
 	const visibleMovies = movies.slice(0, 6);
 
 	return (
@@ -25,4 +25,4 @@ const Block = ({ movies }) => {
 	);
 };
 
-export default Block;
+export default MovieList;

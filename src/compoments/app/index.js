@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { Offline, Online } from "react-detect-offline";
 
-import './app.css';
+import './app.css'
 
 import fetchMovies from '../../services/moviesAPI';
-import Block from "../block";
+import MovieList from "../movieList";
 
 const App = () => {
 
@@ -18,7 +19,14 @@ const App = () => {
 
 	return (
 		<div>
-			<Block movies={movies} />
+			<Online>
+				<MovieList movies={movies} />
+			</Online>
+			<Offline>
+				<div className="no-network">
+					Нет подключения к интернету
+				</div>
+			</Offline>
 		</div>
 	);
 };

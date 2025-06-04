@@ -1,0 +1,57 @@
+.movie-card {
+	width: "100%";
+	border-radius: 12;
+	overflow: "hidden";
+	box-shadow: "0 4px 12px rgba(0,0,0,0.1)"
+}
+
+
+.movie-card-row {
+	min-height: 180px;
+}
+
+.movie-poster-col {
+	flex: none;
+	width: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.movie-poster-img {
+	display: block;
+	height: 100%;
+	width: 120px;
+	object-fit: cover;
+}
+
+.movie-poster-placeholder {
+	width: 120px;
+	height: 100%;
+	background: #f0f0f0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #999;
+}
+
+.movie-details-col {
+	padding: 16px 16px 16px 20px;
+}
+
+.movie-title {
+	margin-bottom: 4px;
+}
+
+.movie-date {
+	display: block;
+	margin-bottom: 8px;
+}
+
+.movie-tags {
+	margin-bottom: 8px;
+}
+
+.movie-overview {
+	margin: 0;
+}
